@@ -33,6 +33,10 @@ proceed = False
 visitor_id = 0
 promt = None
 
+def temp_check():
+    ''' Change the content inside this function to chech temperature as per you requirements'''
+    return 99  # Change this return statement
+
 
 class VideoCamera(object):
     def __init__(self):
@@ -40,7 +44,6 @@ class VideoCamera(object):
         self.send_email = os.environ.get('SEND_EMAIL')
 
         self.video = cv2.VideoCapture(0)
-        self.temp_range = [97.8, 195.2, 98.0, 97.9, 98.3]
 
         self.mid = 0
 
@@ -190,7 +193,7 @@ class VideoCamera(object):
                             diff_x, diff_y = sensor_ptx - face_ptx, sensor_pty - face_pty
 
                             if -10 < diff_x < 10 and -10 < diff_y < 10:
-                                self.temp = self.temp_range[self.mid]
+                                self.temp = temp_check()
                                 body_temperature = self.temp
                                 if self.temp > 100:
                                     temp_high = True
