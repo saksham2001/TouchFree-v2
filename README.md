@@ -20,17 +20,17 @@ If the temperature is within normal Human Body Temperature range it allows the P
 * Install Python
 * Download the Code and the Required Files
     * Download the Code as [Zip from Github.](https://github.com/saksham2001/TouchFree-v2/archive/master.zip)
-    * Or by using command `git clone https://github.com/saksham2001/TouchFree-v2`
-* Install Requirements by running command 
+    * Or by using command `git clone https://github.com/saksham2001/TouchFree-v2`  
+* Install Requirements by running command  
 `pip install -r requirements.txt`
 * Enable Less Secure App Access from [here](https://myaccount.google.com/lesssecureapps) 
 or Create an App Specific Password [here.](https://support.google.com/accounts/answer/185833)
-* Save the Sender's email Address, Password and Email Permission as Local Variables
-`export SEND_EMAIL="TRUE"
-export EMAIL_ID="your-email-here"
-export EMAIL_PWD="your-password-here"`
+* Save the Sender's email Address, Password and Email Permission as Local Variables.  
+`export SEND_EMAIL="TRUE"  
+export EMAIL_ID="your-email-here"   
+export EMAIL_PWD="your-password-here"`   
 * Or If you do not want Email Feature just add Email Permission as Local Variable
-`export SEND_EMAIL="FALSE"`
+`export SEND_EMAIL="FALSE"`   
 
 ### Setup for BalenaFin/ Raspberry Pi 
 Follow [Hackster Tutorial](https://www.hackster.io/sakshambhutani2001/touchfree-v2-contactless-temperature-and-mask-checkup-d01dc8)
