@@ -31,6 +31,7 @@ export EMAIL_ID="your-email-here"
 export EMAIL_PWD="your-password-here"`   
 * Or If you do not want Email Feature just add Email Permission as Local Variable
 `export SEND_EMAIL="FALSE"`   
+Note- For PC Version you have to design your own approach for temperature measurement and add the code to `temp_check` in line 36 of `app.py`
 
 ### Setup for BalenaFin/ Raspberry Pi 
 Follow [Hackster Tutorial](https://www.hackster.io/sakshambhutani2001/touchfree-v2-contactless-temperature-and-mask-checkup-d01dc8)
