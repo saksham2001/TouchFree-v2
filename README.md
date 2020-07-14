@@ -14,7 +14,7 @@ Then by using PID Control System with Servo Motors, the system tries to align th
 
 If the temperature is within normal Human Body Temperature range it allows the Person to Proceed and sends an email to the Admin with a Picture and other Details like Body Temperature, etc.
 
-![Picture 4](Screenshots/4.jpeg)
+![Picture 4](Screenshots/4.jpg)
 
 ### Setup for PC (Windows/Mac/Linux)
 * Install Python
