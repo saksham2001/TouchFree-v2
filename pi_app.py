@@ -180,7 +180,7 @@ class VideoCamera(object):
         self.servoY.setAngle(90)
 
         self.bus = SMBus(1)
-        self.sensor = MLX90614(bus, address=0x5A)
+        self.sensor = MLX90614(self.bus, address=0x5A)
 
     def detect_mask(self, image):
         copy_img = image.copy()
