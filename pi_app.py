@@ -314,7 +314,7 @@ class VideoCamera(object):
                             diff_x, diff_y = sensor_ptx - face_ptx, sensor_pty - face_pty
 
                             if -10 < diff_x < 10 and -10 < diff_y < 10:
-                                temp = sensor.get_amb_temp()
+                                self.temp = self.sensor.get_amb_temp()
                                 body_temperature = self.temp
                                 if self.temp > 100:
                                     temp_high = True
@@ -328,7 +328,7 @@ class VideoCamera(object):
                                 im_p = Image.fromarray(im_n)
                                 draw = ImageDraw.Draw(im_p)
                                 servoX.setAngle(-1 * self.pidX.update(diff_x))
-                                servoY.setAngle(-1 * self.pidY.update(diff_x))
+                                servoY.setAngle(-1 * self.pidY.update(diff_y))
                                 if diff_x > 0:
                                     draw.text((700, 500), '→', (0, 0, 0), font=font_3)
                                 elif diff_x < 0:
