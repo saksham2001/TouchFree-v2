@@ -131,17 +131,6 @@ class PID:
         self.cD = 0
 
 
-servoX = Servo(servoxPIN)
-servoY = Servo(servoyPIN)
-
-servoX.setAngle(90)
-servoY.setAngle(90)
-
-bus = SMBus(1)
-sensor = MLX90614(bus, address=0x5A)
-temp = None
-
-
 class VideoCamera(object):
     def __init__(self):
 
