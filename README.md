@@ -1,5 +1,5 @@
 # TouchFree v2: AI-based Mask Detection and Temperature Check
-![work in progress](https://img.shields.io/badge/-Work%20in%20Progress-blue) [![Build Status](https://travis-ci.org/TheThingsNetwork/arduino-device-lib.svg?branch=master)](https://travis-ci.org/TheThingsNetwork/arduino-device-lib)
+![work in progress](https://img.shields.io/badge/-Work%20in%20Progress-blue) [![Build Status](https://travis-ci.org/TheThingsNetwork/arduino-device-lib.svg?branch=master)](#)
 
 ### Explanation
 Firstly, the Tensorflow based Deep Learning Neural Network tries to detect if the person is wearing a Mask or not. The System has been made Robust by training it with many different examples to prevent False Positives.
