@@ -125,6 +125,8 @@ class VideoCamera(object):
 
     def __del__(self):
         self.video.release()
+        
+        self.bus.close()
 
     def get_frame(self):
         success, img = self.video.read()
