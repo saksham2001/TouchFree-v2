@@ -67,6 +67,9 @@ class VideoCamera(object):
             self.message["Subject"] = "Alert: A New Person Entered the Premises"
             self.message["From"] = self.sender_email
             self.message["To"] = self.receiver_email
+            
+        self.bus = SMBus(1)
+        self.sensor = MLX90614(self.bus, address=0x5A)
 
     def detect_mask(self, image):
         copy_img = image.copy()
