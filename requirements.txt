@@ -14,7 +14,7 @@ pytz
 requests
 Werkzeug
 scipy
-tensorflow==2.2.0
+tensorflow==2.2.1
 opencv-python
 Pillow
 dlib
